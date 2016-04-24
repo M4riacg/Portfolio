@@ -1,0 +1,134 @@
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+$color-azul: #97F7EF;
+$color-verde: #A1FF77;
+$color-rojo: #FF445A;
+$color-gris: #686978;
+$color-negro: #000000;
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  /* To avoid select */
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select:none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: 'Lato', sans-serif;
+}
+
+main{
+  flex: 1 0 auto;
+}
+
+.selector-for-some-widget {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.Montserrat{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.Dancing{
+font-family: 'Damion', cursive;
+}
+
+//-------navbar------------//
+@media (min-width: 768px) {
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar-nav > li {
+    float: none;
+    display: inline-block;
+  }
+  .navbar-nav > li.navbar-right {
+    float: right !important;
+  }
+}
+
+.background-turquesa{
+  background-color: $color-azul;
+}
+
+.navbar-nav>li>a{
+  color: $color-gris !important;
+}
+
+.headerfix {
+  position: fixed;
+  z-index: 99999;
+}
+
+//------------------------//
+
+.center-block {float: none !important}
+
+.center-entry-content {
+ vertical-align: middle;
+ text-align: center;
+}
+
+.padding-top-2{
+  padding-top: 2%;
+}
+
+//---------------------//
+
+.Dancing-title{
+  font-size: 4.5em;
+}
+
+.delay-1{
+  -webkit-animation-delay: 0.5s; /* Chrome, Safari, Opera */
+  -moz-animation-delay: 0.5s; /* Mozilla */
+  animation-delay: 0.5s;
+}
+
+.delay-2{
+  -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+  -moz-animation-delay: 1s; /* Mozilla */
+  animation-delay: 1s;
+}
+
+.card{
+    border-radius: 1em !important;
+}
+
+.card-img-top{
+  border-top-left-radius:1em;
+  border-top-right-radius:1em;
+}
+
+.img-border-1em{
+    border-radius: 1em !important;
+}
+
+.font-size-20{
+   font-size: 20px;
+}
+
+.font-size-15{
+   font-size: 15px;
+}
